@@ -1,15 +1,16 @@
-
 package chesssystem;
 
-import chesssystem.boardgame.Position;
+import chesssystem.boardgame.Board;
+import chesssystem.boardgame.chess.ChessMatch;
 
 public class ChessSystem {
 
     public static void main(String[] args) {
+
         
-        Position pos = new Position(3, 5);
-        System.out.println(pos);
-        
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
+
     }
-    
+
 }
